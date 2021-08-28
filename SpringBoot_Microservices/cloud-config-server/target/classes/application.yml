@@ -1,0 +1,14 @@
+server:
+  port: 9296
+
+spring:
+  application:
+    name: CONFIG_SERVER
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/bodhi14688/config-server/tree/main
+          clone-on-start: true
+  profiles:
+    active: native
